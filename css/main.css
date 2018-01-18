@@ -568,7 +568,6 @@ h1 {
 
   .top-line {
     min-height: 70px;
-    padding-top: 5px;
   }
   .top-line__wrap {
     display: -webkit-box;
@@ -711,6 +710,14 @@ h1 {
     max-width: 1200px;
   }
 
+  .top-line .country-ic {
+    width: 60px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 100% 3px;
+    margin-right: 15px;
+  }
   .top-line .ip-panel {
     margin-right: 40px;
     width: auto;
