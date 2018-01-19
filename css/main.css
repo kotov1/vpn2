@@ -27,61 +27,51 @@
   src: url("../fonts/BrandonMedium/BrandonGrotesque-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/BrandonMedium/BrandonGrotesque-Medium.woff") format("woff"), url("../fonts/BrandonMedium/BrandonGrotesque-Medium.ttf") format("truetype");
 }
 /*GENERAL STYLES START */
-/* line 4, ../sass/main.sass */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-/* line 6, ../sass/main.sass */
 *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-/* line 9, ../sass/main.sass */
 *::-webkit-input-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 13, ../sass/main.sass */
 *:-moz-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 17, ../sass/main.sass */
 *::-moz-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 21, ../sass/main.sass */
 *:-ms-input-placeholder {
   color: #666;
   opacity: 1;
 }
 
-/* line 25, ../sass/main.sass */
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
   color: #666;
 }
 
-/* line 28, ../sass/main.sass */
 body input:required:valid,
 body textarea:required:valid {
   color: #666;
 }
 
-/* line 32, ../sass/main.sass */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* line 37, ../sass/main.sass */
 body {
   font-size: 16px;
   min-width: 320px;
@@ -96,14 +86,12 @@ body {
   background-color: #fff;
 }
 
-/* line 50, ../sass/main.sass */
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 1em;
 }
 
-/* line 54, ../sass/main.sass */
 ul {
   margin: 0;
   padding: 0;
@@ -175,7 +163,6 @@ ul {
 }
 /*GENERAL STYLES END */
 /*TOP LINE STYLES START */
-/* line 92, ../sass/main.sass */
 .top-line {
   background-color: #FFF;
   -webkit-box-align: center;
@@ -184,14 +171,12 @@ ul {
   font-family: "BrandonMedium", sans-serif;
   position: relative;
 }
-/* line 100, ../sass/main.sass */
 .top-line__content {
   margin-top: 10px;
   padding-top: 6px;
   width: 100%;
   display: none;
 }
-/* line 106, ../sass/main.sass */
 .top-line .ip-panel {
   max-width: 350px;
   margin: 0 auto 10px;
@@ -207,24 +192,20 @@ ul {
   border-radius: 5px;
   font-size: 14px;
 }
-/* line 116, ../sass/main.sass */
 .top-line .ip-panel span:first-child {
   font-family: "BrandonBold", sans-serif;
   display: inline-block;
   margin-right: 9px;
 }
-/* line 120, ../sass/main.sass */
 .top-line .ip-panel span:last-child {
   -webkit-animation: textColorChange 5s 1s infinite;
           animation: textColorChange 5s 1s infinite;
 }
 
-/* line 123, ../sass/main.sass */
 .btn-wrap {
   text-align: center;
 }
 
-/* line 125, ../sass/main.sass */
 .button {
   padding: 5px 25px;
   background-color: #ff3d4c;
@@ -239,7 +220,6 @@ ul {
           animation: buttonBlink 2s infinite;
   text-decoration: none;
 }
-/* line 136, ../sass/main.sass */
 .button:hover {
   -webkit-animation: none;
           animation: none;
@@ -247,7 +227,6 @@ ul {
           box-shadow: 0px 0px 10px #ff3d4c, inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
 }
 
-/* line 140, ../sass/main.sass */
 .logo {
   max-width: 115px;
   width: 100%;
@@ -256,14 +235,12 @@ ul {
   overflow: hidden;
 }
 
-/* line 146, ../sass/main.sass */
 .logo__img {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* line 151, ../sass/main.sass */
 .toggle-btn {
   width: 40px;
   height: 40px;
@@ -278,7 +255,6 @@ ul {
   transition: all 0.5s;
 }
 
-/* line 163, ../sass/main.sass */
 .toggle-btn.on {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
@@ -290,8 +266,9 @@ ul {
 
 /*TOP LINE STYLES END */
 /*PAGE STYLES START */
-/* line 185, ../sass/main.sass */
 .page {
+  height: 100vh;
+  min-height: 768px;
   position: relative;
   overflow: hidden;
   background-color: #98b0f0;
@@ -300,7 +277,6 @@ ul {
   background-size: cover;
   z-index: 1;
 }
-/* line 193, ../sass/main.sass */
 .page:before {
   content: "";
   display: block;
@@ -316,13 +292,11 @@ ul {
   background-size: 48%;
   z-index: -1;
 }
-/* line 207, ../sass/main.sass */
 .page__container {
   width: 100%;
   padding: 1em;
 }
 
-/* line 211, ../sass/main.sass */
 h1 {
   margin: 10px 0 0 0;
   padding: 0 21px;
@@ -333,25 +307,21 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* line 221, ../sass/main.sass */
 .advantages {
   margin-top: 300px;
   color: #FFF;
   font-size: 1.125em;
 }
-/* line 225, ../sass/main.sass */
 .advantages li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 17px;
 }
-/* line 229, ../sass/main.sass */
 .advantages .svg-wrap {
   width: 25%;
   margin-right: 10px;
 }
-/* line 233, ../sass/main.sass */
 .advantages .svg-wrap img {
   margin: 0 auto;
   display: block;
@@ -359,7 +329,6 @@ h1 {
   width: 45px;
   max-height: 45px;
 }
-/* line 240, ../sass/main.sass */
 .advantages__text {
   display: block;
   width: 75%;
@@ -368,13 +337,11 @@ h1 {
   font-weight: normal;
 }
 
-/* line 249, ../sass/main.sass */
 .table-wrap {
   margin-top: 19px;
   position: relative;
 }
 
-/* line 253, ../sass/main.sass */
 .purchase {
   margin-bottom: 20px;
   text-align: center;
@@ -382,7 +349,6 @@ h1 {
   font: 1.125em "BrandonLight", sans-serif;
 }
 
-/* line 259, ../sass/main.sass */
 .table-pricing {
   width: 90%;
   margin: 0 auto 23px;
@@ -395,57 +361,45 @@ h1 {
   position: relative;
   z-index: 1;
 }
-/* line 271, ../sass/main.sass */
 .table-pricing:first-of-type .price-new {
   color: #3377C1;
 }
-/* line 274, ../sass/main.sass */
 .table-pricing:nth-of-type(2) .price-new {
   color: #214EA7;
 }
-/* line 277, ../sass/main.sass */
 .table-pricing:last-of-type .price-new {
   color: #4D93D5;
 }
-/* line 281, ../sass/main.sass */
 .table-pricing:hover .popular {
   opacity: 1;
   width: 72%;
 }
-/* line 284, ../sass/main.sass */
 .table-pricing:hover .price-new {
   font-size: 58px;
   line-height: 56px;
 }
-/* line 287, ../sass/main.sass */
 .table-pricing:hover .price-new .symbol, .table-pricing:hover .price-new .time {
   line-height: 39px;
 }
-/* line 289, ../sass/main.sass */
 .table-pricing:hover .pricing__button {
   display: block;
 }
 
-/* line 293, ../sass/main.sass */
 .recomend .popular {
   opacity: 1;
   width: 72%;
 }
-/* line 296, ../sass/main.sass */
 .recomend .price-new {
   font-size: 58px;
   line-height: 56px;
 }
-/* line 299, ../sass/main.sass */
 .recomend .price-new .symbol, .recomend .price-new .time {
   line-height: 39px;
 }
-/* line 301, ../sass/main.sass */
 .recomend .pricing__button {
   display: block;
 }
 
-/* line 308, ../sass/main.sass */
 .table-pricing h3 {
   margin: 0 0 10px 0;
   font: 14px "BrandonMedium", sans-serif;
@@ -455,30 +409,25 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* line 316, ../sass/main.sass */
 .date {
   font-size: 18px;
   font-family: "BrandonBold", sans-serif;
   margin: 0;
 }
 
-/* line 321, ../sass/main.sass */
 .price {
   font-family: "BrandonBlack", sans-serif;
   margin: 0;
 }
-/* line 324, ../sass/main.sass */
 .price .symbol, .price .time {
   font-family: "BrandonMedium", sans-serif;
   vertical-align: top;
   line-height: 30px;
 }
-/* line 328, ../sass/main.sass */
 .price .time {
   vertical-align: bottom;
 }
 
-/* line 331, ../sass/main.sass */
 .price-new {
   min-height: 105px;
   display: -webkit-box;
@@ -494,19 +443,16 @@ h1 {
   font-size: 46px;
   line-height: 40px;
 }
-/* line 339, ../sass/main.sass */
 .price-new .symbol, .price-new .time {
   font-size: 30px;
   line-height: 31px;
 }
 
-/* line 344, ../sass/main.sass */
 .price-old {
   font-size: 30px;
   color: #FFF;
   position: relative;
 }
-/* line 348, ../sass/main.sass */
 .price-old:after {
   content: "";
   position: absolute;
@@ -519,16 +465,13 @@ h1 {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-/* line 358, ../sass/main.sass */
 .price-old .symbol {
   font-size: 26px;
 }
-/* line 360, ../sass/main.sass */
 .price-old .time {
   font-size: 18px;
 }
 
-/* line 365, ../sass/main.sass */
 .table-pricing .btn-wrap {
   position: absolute;
   bottom: 0;
@@ -537,7 +480,6 @@ h1 {
           transform: translate(-50%, 40%);
 }
 
-/* line 371, ../sass/main.sass */
 .pricing__button {
   width: 215px;
   height: 40px;
@@ -547,7 +489,6 @@ h1 {
   transition: all 0.2s;
 }
 
-/* line 379, ../sass/main.sass */
 .popular {
   position: absolute;
   top: 0;
@@ -568,56 +509,46 @@ h1 {
 
 /*PAGE STYLES END */
 @media only screen and (min-width: 480px) {
-  /* line 405, ../sass/main.sass */
   .container {
     max-width: 450px;
   }
 
-  /* line 409, ../sass/main.sass */
   .top-line .ip-panel {
     margin: 0 auto 20px;
     width: 80%;
   }
 
-  /* line 414, ../sass/main.sass */
   .page:before {
     top: -60px;
   }
 }
 @media only screen and (min-width: 576px) {
-  /* line 422, ../sass/main.sass */
   .container {
     max-width: 540px;
   }
 
-  /* line 426, ../sass/main.sass */
   .page:before {
     top: -100px;
   }
 
-  /* line 429, ../sass/main.sass */
   .advantages {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  /* line 434, ../sass/main.sass */
   .table-pricing {
     width: 75%;
   }
 }
 @media only screen and (min-width: 768px) {
-  /* line 445, ../sass/main.sass */
   .container {
     max-width: 720px;
   }
 
-  /* line 448, ../sass/main.sass */
   .top-line {
     min-height: 70px;
   }
-  /* line 450, ../sass/main.sass */
   .top-line__wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -629,11 +560,9 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 454, ../sass/main.sass */
   .top-line .logo {
     line-height: 1em;
   }
-  /* line 456, ../sass/main.sass */
   .top-line__content {
     margin-top: 0;
     padding-top: 0;
@@ -647,79 +576,65 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 462, ../sass/main.sass */
   .top-line .ip-panel {
     margin: 0 20px 0 0;
     width: auto;
     min-width: 260px;
   }
-  /* line 467, ../sass/main.sass */
   .top-line .ip-panel span:first-child {
     margin-right: 5px;
   }
-  /* line 469, ../sass/main.sass */
   .top-line .button {
     font-size: 11px;
     padding: 5px 20px;
   }
 
-  /* line 473, ../sass/main.sass */
   .toggle-btn {
     display: none;
   }
 
-  /* line 476, ../sass/main.sass */
   .page {
     padding-top: 15px;
     padding-bottom: 30px;
     background-image: url("../img/bg.jpg");
   }
-  /* line 480, ../sass/main.sass */
   .page::before {
     top: 11%;
     left: 14%;
     background-size: 88%;
   }
-  /* line 485, ../sass/main.sass */
   .page h1 {
     font-size: 2.75em;
     padding: 0;
     line-height: 1.2;
   }
 
-  /* line 490, ../sass/main.sass */
   .advantages {
     width: 45%;
     margin: 20px 0 0 auto;
     z-index: 1;
   }
-  /* line 494, ../sass/main.sass */
   .advantages li {
     margin-bottom: 22px;
   }
-  /* line 496, ../sass/main.sass */
   .advantages li.advantages__text {
     width: 65%;
   }
-  /* line 499, ../sass/main.sass */
   .advantages .svg-wrap img {
     width: 52px;
     height: 52px;
   }
 
-  /* line 504, ../sass/main.sass */
   .purchase {
     margin: 0;
     text-align: right;
   }
 
-  /* line 508, ../sass/main.sass */
   .table-wrap {
     margin-top: 45px;
     min-height: 250px;
   }
 
-  /* line 512, ../sass/main.sass */
   .table-pricing {
     display: block;
     width: 220px;
@@ -727,67 +642,54 @@ h1 {
     margin-bottom: 0;
     position: absolute;
   }
-  /* line 518, ../sass/main.sass */
   .table-pricing:first-of-type {
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  /* line 521, ../sass/main.sass */
   .table-pricing:nth-of-type(2) {
     left: 0;
   }
-  /* line 523, ../sass/main.sass */
   .table-pricing:last-of-type {
     right: 0;
   }
-  /* line 525, ../sass/main.sass */
   .table-pricing.table-center {
     z-index: 2;
   }
-  /* line 529, ../sass/main.sass */
   .table-pricing.recomend .popular, .table-pricing:hover .popular {
     width: 85%;
   }
-  /* line 532, ../sass/main.sass */
   .table-pricing .price-new {
     min-height: 110px;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
   }
-  /* line 537, ../sass/main.sass */
   .table-pricing .popular {
     width: 75%;
   }
-  /* line 540, ../sass/main.sass */
   .table-pricing .btn-wrap {
     width: 215px;
     max-width: 85%;
   }
-  /* line 543, ../sass/main.sass */
   .table-pricing .btn-wrap .pricing__button {
     width: 100%;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 555, ../sass/main.sass */
   .container {
     max-width: 960px;
   }
 
-  /* line 558, ../sass/main.sass */
   .table-wrap {
     width: 75%;
     margin: 75px auto 0;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 568, ../sass/main.sass */
   .container {
     max-width: 1200px;
   }
 
-  /* line 573, ../sass/main.sass */
   .top-line .country-ic {
     width: 60px;
     height: 40px;
@@ -796,36 +698,30 @@ h1 {
     background-position: 100% 3px;
     margin-right: 15px;
   }
-  /* line 581, ../sass/main.sass */
   .top-line .ip-panel {
     margin-right: 40px;
     width: auto;
     min-width: 310px;
   }
-  /* line 586, ../sass/main.sass */
   .top-line .button {
     font-size: 13px;
     padding: 12px 25px;
     font-weight: normal;
   }
 
-  /* line 592, ../sass/main.sass */
   .page::before {
     left: 11%;
     top: 14%;
   }
-  /* line 596, ../sass/main.sass */
   .page__content {
     width: 65%;
     margin-left: auto;
   }
-  /* line 599, ../sass/main.sass */
   .page h1 {
     padding: 0 1em;
     line-height: 1.1;
   }
 
-  /* line 603, ../sass/main.sass */
   .advantages {
     width: 100%;
     margin-left: 0;
@@ -835,7 +731,6 @@ h1 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  /* line 608, ../sass/main.sass */
   .advantages li {
     width: 30%;
     margin-bottom: 30px;
@@ -847,28 +742,23 @@ h1 {
         -ms-flex-align: center;
             align-items: center;
   }
-  /* line 613, ../sass/main.sass */
   .advantages .svg-wrap {
     margin: 0 0 10px 0;
   }
-  /* line 615, ../sass/main.sass */
   .advantages .advantages__text {
     text-align: center;
   }
 
-  /* line 618, ../sass/main.sass */
   .table-wrap {
     width: 100%;
     margin: 0;
   }
 
-  /* line 622, ../sass/main.sass */
   .table-pricing {
     width: 245px;
   }
 }
 @media only screen and (min-width: 1400px) {
-  /* line 627, ../sass/main.sass */
   .page::before {
     left: 16%;
   }
