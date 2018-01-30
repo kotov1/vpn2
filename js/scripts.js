@@ -10,7 +10,6 @@ $(function() {
 	});
 
 
-
 	// Фиксирование состояние рекомендованной карточки тарифного плана
 	$(".table-pricing").hover( function(){
 		$(".table-pricing").eq(0).removeClass('recomend');	
