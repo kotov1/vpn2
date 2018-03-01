@@ -275,13 +275,20 @@ ul {
   background-size: cover;
   z-index: 1;
 }
-.page:before {
+.page__container {
+  width: 100%;
+  padding: 1em;
+}
+.page__content {
+  position: relative;
+}
+.page__content:before {
   content: "";
   display: block;
-  width: 614px;
-  height: 481px;
+  width: 631px;
+  height: 340px;
   position: absolute;
-  top: -35px;
+  top: 20px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -290,12 +297,9 @@ ul {
   background-size: 48%;
   z-index: -1;
 }
-.page__container {
-  width: 100%;
-  padding: 1em;
-}
 
 h1 {
+  min-height: 172px;
   margin: 10px 0 0 0;
   padding: 0 21px;
   font: 1.875em "BrandonBold", sans-serif;
@@ -306,7 +310,7 @@ h1 {
 }
 
 .advantages {
-  margin-top: 300px;
+  margin-top: 230px;
   color: #FFF;
   font-size: 1.125em;
 }
@@ -505,6 +509,18 @@ h1 {
   transition: all 0.2s;
 }
 
+.text-wrap {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.text {
+  margin: 0 0 10px 0;
+  color: #fff;
+  font: 18px "BrandonMedium", sans-serif;
+  text-align: center;
+}
+
 /*PAGE STYLES END */
 @media only screen and (min-width: 480px) {
   .container {
@@ -516,8 +532,8 @@ h1 {
     width: 80%;
   }
 
-  .page:before {
-    top: -60px;
+  .page__content:before {
+    background-size: 60%;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -525,8 +541,8 @@ h1 {
     max-width: 540px;
   }
 
-  .page:before {
-    top: -100px;
+  .page__content:before {
+    background-size: 75%;
   }
 
   .advantages {
@@ -592,17 +608,18 @@ h1 {
   }
 
   .page {
-    min-height: 100vh;
+    min-height: calc(100vh - 72px);
     padding-top: 15px;
     padding-bottom: 30px;
     background-image: url("../img/bg.jpg");
   }
-  .page::before {
-    top: 11%;
-    left: 14%;
-    background-size: 88%;
+  .page__content::before {
+    top: 16%;
+    left: 17%;
+    background-size: 80%;
   }
   .page h1 {
+    min-height: auto;
     font-size: 2.75em;
     padding: 0;
     line-height: 1.2;
@@ -630,7 +647,7 @@ h1 {
   }
 
   .table-wrap {
-    margin-top: 45px;
+    margin-top: 25px;
     min-height: 250px;
   }
 
@@ -679,9 +696,15 @@ h1 {
     max-width: 960px;
   }
 
+  .page__content::before {
+    top: 18%;
+    left: 24%;
+    background-size: 90%;
+  }
+
   .table-wrap {
     width: 75%;
-    margin: 75px auto 0;
+    margin: 25px auto 0;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -708,9 +731,10 @@ h1 {
     font-weight: normal;
   }
 
-  .page::before {
-    left: 11%;
-    top: 14%;
+  .page__content::before {
+    top: 5%;
+    left: -35%;
+    background-size: 100%;
   }
   .page__content {
     width: 65%;
@@ -756,9 +780,18 @@ h1 {
   .table-pricing {
     width: 245px;
   }
-}
-@media only screen and (min-width: 1400px) {
-  .page::before {
-    left: 16%;
+
+  .text-wrap {
+    max-width: 400px;
+    position: absolute;
+    top: 68%;
+    left: -54%;
+  }
+
+  .text {
+    margin: 0;
+    color: #fff;
+    font: 18px "BrandonMedium", sans-serif;
+    text-align: center;
   }
 }

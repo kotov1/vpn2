@@ -190,25 +190,41 @@ ul
 	background-position: center top 
 	background-size: cover
 	z-index: 1
-	&:before
-		content: "" 
-		display: block
-		width: 614px
-		height: 481px
-		position: absolute
-		top: -35px
-		left: 50%
-		transform: translateX(-50%)
-		background: url('../img/fingers.png') no-repeat
-		background-position: center bottom
-		background-size: 48% 
-		z-index: -1
+	// &:before
+	// 	content: "" 
+	// 	display: block
+	// 	width: 631px
+	// 	height: 340px
+	// 	position: absolute
+	// 	top: -35px
+	// 	left: 50%
+	// 	transform: translateX(-50%)
+	// 	background: url('../img/fingers.png') no-repeat
+	// 	background-position: center bottom
+	// 	background-size: 48% 
+	// 	z-index: -1
 
 	&__container
 		width: 100%
 		padding: 1em
+	&__content
+		position: relative
+		&:before
+			content: "" 
+			display: block
+			width: 631px
+			height: 340px
+			position: absolute
+			top: 20px
+			left: 50%
+			transform: translateX(-50%)
+			background: url('../img/fingers.png') no-repeat
+			background-position: center bottom
+			background-size: 48% 
+			z-index: -1
 
 h1
+	min-height: 172px
 	margin: 10px 0 0 0 
 	padding: 0 21px
 	font: 1.875em 'BrandonBold', sans-serif
@@ -219,7 +235,7 @@ h1
 	
 
 .advantages
-	margin-top: 300px
+	margin-top: 230px
 	color: #FFF
 	font-size: 1.125em
 	li
@@ -391,6 +407,16 @@ h1
 	opacity: 0.5
 	transition: all .2s
 
+.text-wrap
+	max-width: 400px
+	margin: 0 auto
+
+.text
+	margin: 0 0 10px 0
+	color: #fff
+	font: 18px "BrandonMedium", sans-serif
+	text-align: center
+
 /*PAGE STYLES END*/	
 
 
@@ -411,8 +437,9 @@ h1
 			width: 80%
 			
 	.page
-		&:before
-			top: -60px 
+		&__content
+			&:before
+				background-size: 60%
 			
 
 
@@ -423,8 +450,9 @@ h1
 		max-width: 540px
 		
 	.page
-		&:before
-				top: -100px 
+		&__content
+			&:before
+				background-size: 75%
 				
 	.advantages
 		width: 80%
@@ -474,16 +502,18 @@ h1
 		display: none
 		
 	.page
-		min-height: 100vh 
+		min-height: calc(100vh - 72px)
 		padding-top: 15px
 		padding-bottom: 30px
 		background-image: url('../img/bg.jpg')
-		&::before
-			top: 11%
-			left: 14%
-			background-size: 88% 
+		&__content
+			&::before
+				top: 16%
+				left: 17%
+				background-size: 80% 
 			
 		h1
+			min-height: auto
 			font-size: 2.75em
 			padding: 0
 			line-height: 1.2
@@ -507,7 +537,7 @@ h1
 		text-align: right
 		
 	.table-wrap
-		margin-top: 45px
+		margin-top: 25px
 		min-height: 250px 
 		
 	.table-pricing
@@ -555,10 +585,18 @@ h1
 @media only screen and (min-width : 992px)
 	.container
 		max-width: 960px
+
+	.page
+		&__content
+			&::before
+				top: 18%
+				left: 24%
+				background-size: 90% 
+
 		
 	.table-wrap
 		width: 75%
-		margin: 75px auto 0 
+		margin: 25px auto 0 
 
 
 
@@ -590,9 +628,11 @@ h1
 			font-weight: normal
 		
 	.page
-		&::before
-			left: 11%
-			top: 14%
+		&__content
+			&::before
+				top: 5%
+				left: -35%
+				background-size: 100% 
 
 		&__content
 			width: 65%
@@ -623,7 +663,19 @@ h1
 	.table-pricing
 		width: 245px
 
+	.text-wrap
+		max-width: 400px
+		position: absolute
+		top: 68%
+		left: -54%
+
+	.text
+		margin: 0
+		color: #fff
+		font: 18px "BrandonMedium", sans-serif
+		text-align: center
+
 @media only screen and (min-width : 1400px)
-	.page
-		&::before
-			left: 16%
+	// .page
+	// 	&::before
+	// 		left: 16%
